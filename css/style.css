@@ -1,0 +1,27 @@
+.bg-img {
+  background-image: url("https://media.istockphoto.com/photos/tri-colored-pembroke-welsh-corgi-sitting-outside-in-a-park-with-fall-picture-id1432630691?b=1&k=20&m=1432630691&s=170667a&w=0&h=DGEzq626aP_JpLChJhodY83FykH4mU0vmhpyFZ-uSko=");
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form {
+  height: 40em;
+}
+
+.form-message {
+  height: 100px;
+}
+
+.move-down {
+  transform: translateY(15vh);
+}
+
+img {
+  min-height: 60vh;
+  min-width: 30vw;
+}
+
+p {
+  color: white;
+}
