@@ -23,5 +23,21 @@ img {
 }
 
 p {
-  color: white;
+  color: black;
+}
+.custom-color-blk {
+  color: black;
+}
+div i.mdi {
+  color: green;
+}
+
+.card-custom {
+  height: 100%;
+  background-color: white;
+}
+
+.bar {
+  width: 65%;
+  height: 10px;
 }

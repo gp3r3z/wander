@@ -28,9 +28,9 @@
     <header>
       <!-- place navbar here -->
       <!-- Image and text -->
-      <nav class="navbar navbar-white bg-white">
+      <nav class="navbar-fluid navbar-white bg-success">
         <a class="navbar-brand" href="#">
-          <i class="ms-5 mdi mdi-paw fs-3"></i>
+          <i class="ms-5 mdi mdi-paw fs-3 custom-color-blk"></i>
           <h2 class="d-inline-block align-top" alt="">Wander</h2>
         </a>
       </nav>
@@ -40,12 +40,11 @@
 
       <section class="row bg-img justify-content-around p-3">
         <!-- SECTION Hero Form -->
-        <div class="col-4 bg-black m-5 contact-form p-5">
+        <div class="col-12">
+          <h5 class="">Contact us:</h5>
+        </div>
+        <div class="col-4 bg-black m-3 contact-form p-5">
           <form class="row justify-content-end">
-            <label for="exampleInputEmail1" class="form-label"
-              >Schedule a call below:
-            </label>
-
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Name</label>
               <input
@@ -100,7 +99,7 @@
             </button>
           </form>
         </div>
-        <div class="col-6 m-5 text-start">
+        <div class="col-6 m-3 text-start">
           <div
             class="border-3 border-start row align-items-center justify-content-center"
           >
@@ -112,7 +111,7 @@
 
       <!-- SECTION Quick Over-view  feats-->
 
-      <section class="row justify-content-around bg-white p-5 custom">
+      <section class="row justify-content-around bg-success p-5">
         <div class="col-4">
           <h1>More Content</h1>
           <h3>Sub Title</h3>
@@ -177,7 +176,7 @@
       </section>
       <!-- SECTION Spotlight on walker -->
       <section
-        class="row justify-content-around align-content-around p-5 bg-primary"
+        class="row justify-content-around align-content-around p-5 bg-white"
       >
         <div class="col-3 p-3">
           <div class="card" style="width: 18rem">
@@ -209,19 +208,64 @@
 
       <!-- SECTION Reviews  -->
 
-      <section class="row">
-        <div class="col-3">card 1</div>
-        <div class="col-3">card 2</div>
-        <div class="col-3">card 3</div>
+      <section class="row p-4 bg-success justify-content-center">
+        <div class="col-3">
+          <div class="card card-custom p-4" style="width: 18rem">
+            <div class="card-body text-center">
+              <h4>
+                Yooooo my dog Mr.peabody loves this place. We found our forever
+                home
+              </h4>
+              <p class="card-text">Random User</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card card-custom p-4" style="width: 25rem">
+            <div class="card-body text-center">
+              <div class="row justify-content-center">
+                <i class="col-3 mdi mdi-star-circle fs-3"></i>
+                <i class="col-3 mdi mdi-star-circle fs-3"></i>
+                <i class="col-3 mdi mdi-star-circle fs-3"></i>
+              </div>
+              <h4 class="p-1">
+                This is the best walking service. My little biscuit won't be
+                walking alone anytime soon.
+              </h4>
+              <p class="card-text">DogLover3000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card card-custom p-4" style="width: 18rem">
+            <div class="card-body text-center">
+              <h4>
+                They take care of each of one of my babies.... theres 20....over
+                40lbs
+              </h4>
+              <p class="card-text">Random User</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- SECTION company quote  -->
-      <section class="row">
-        <div class="col-12"></div>
+      <section
+        class="row justify-content-start align-content-around p-5 bg-white"
+      >
+        <div class="col-6 p-5">
+          <h1>Mission:</h1>
+          <h5>
+            Find peace, life is like a water fall, you’ve gotta flow. Give
+            thanks to the most high. Give thanks to the most high. Major key,
+            don’t fall for the trap, stay focused.
+          </h5>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="row justify-content-around p-5">
       <!-- place footer here -->
+      <div class="col-3 bg-success bar"></div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
