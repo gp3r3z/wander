@@ -27,67 +27,59 @@
       href="https://fonts.googleapis.com/css2?family=Chicle&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      body.debug .container,
+      body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+      }
+
+      body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+      }
+
+      body.debug [class*="col-"] {
+        outline: 4px dotted limegreen;
+        outline-offset: -3px;
+      }
+    </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <header>
+  <body class="debug">
+    <header class="sticky-top">
       <!-- place navbar here -->
-      <nav class="navbar navbar-white bg-success sticky-top">
+      <section class="navbar navbar-white bg-success sticky-top">
         <a class="navbar-brand" href="#">
           <i class="ms-5 mdi mdi-paw fs-3 text-black"></i>
           <h2 class="d-inline-block align-top" alt="">Wander</h2>
         </a>
-      </nav>
+      </section>
     </header>
     <main>
       <!-- SECTION Hero Image  -->
 
       <section class="row bg-img justify-content-around p-5">
         <!-- SECTION Hero Form -->
-        <div class="col-12">
-          <h5 class="">Contact us:</h5>
-        </div>
-        <div class="col-md-4 bg-black m-3 contact-form p-5">
+        <h5 class="col-12 d-flex flex-column justify-content-end">
+          Contact us:
+        </h5>
+        <div class="col-md-4 m-3 contact-form p-5">
           <form class="row justify-content-end">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Name</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
+              <input class="form-control" placeholder="Name" />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Email</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input class="form-control" placeholder="Email" />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Phone</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
+              <input class="form-control" placeholder="password" />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Message</label
-              >
-              <input
-                type="password"
-                class="form-control form-message"
-                id="exampleInputPassword1"
-              />
+              <input class="form-control form-message" placeholder="Message" />
             </div>
             <div class="mb-3 form-check">
               <input
@@ -96,7 +88,7 @@
                 id="exampleCheck1"
               />
               <label class="form-check-label" for="exampleCheck1"
-                >Ready to get annoyed with tons of spam ? Check the box</label
+                >Ready to get annoyed with tons of spam ? Check txzhe box</label
               >
             </div>
             <button type="submit" class="col-4 btn btn-outline-success">
@@ -223,7 +215,7 @@
       <section
         class="row p-4 bg-secondary align-items-center justify-content-around"
       >
-        <div class="col-md-3">
+        <div class="col-md-3 order-2 order-md-1 mt-3">
           <div class="card card-custom p-4">
             <div class="card-body text-center">
               <h4>
@@ -234,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 order-1 order-md-2 ms-md-4">
           <div class="card card-custom p-4 card-emp">
             <div class="card-body text-center">
               <div class="row justify-content-center">
@@ -250,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 order-3 order-md-3 mt-3 ms-md-4">
           <div class="card card-custom p-4">
             <div class="card-body text-center">
               <h4>
@@ -267,7 +259,7 @@
       <section
         class="row justify-content-start align-content-around p-5 bg-success"
       >
-        <div class="col-6 p-5 mission">
+        <div class="col-md-7 p-5 mission">
           <h1>Mission:</h1>
           <h5>
             Find peace, life is like a water fall, you’ve gotta flow. Give
