@@ -12,10 +12,6 @@
 - [x] Must use external icon library
 - [x] Cards are vertically centered with center card larger for emphasis
 
-* Stretch Goals
-- [ ] Cards are vertically centered with center card larger for emphasis
-
-
 ## Teacher / Tutor Check:
 
 - [ ] Proper use of the Bootstrap grid system to maintain page architecture (no improperly nested classes)
