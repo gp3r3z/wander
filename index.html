@@ -21,16 +21,21 @@
       href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
     />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chicle&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header>
       <!-- place navbar here -->
-      <!-- Image and text -->
-      <nav class="navbar-fluid navbar-white bg-success">
+      <nav class="navbar navbar-white bg-success sticky-top">
         <a class="navbar-brand" href="#">
-          <i class="ms-5 mdi mdi-paw fs-3 custom-color-blk"></i>
+          <i class="ms-5 mdi mdi-paw fs-3 text-black"></i>
           <h2 class="d-inline-block align-top" alt="">Wander</h2>
         </a>
       </nav>
@@ -38,12 +43,12 @@
     <main>
       <!-- SECTION Hero Image  -->
 
-      <section class="row bg-img justify-content-around p-3">
+      <section class="row bg-img justify-content-around p-5">
         <!-- SECTION Hero Form -->
         <div class="col-12">
           <h5 class="">Contact us:</h5>
         </div>
-        <div class="col-4 bg-black m-3 contact-form p-5">
+        <div class="col-md-4 bg-black m-3 contact-form p-5">
           <form class="row justify-content-end">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Name</label>
@@ -101,7 +106,7 @@
         </div>
         <div class="col-6 m-3 text-start">
           <div
-            class="border-3 border-start row align-items-center justify-content-center"
+            class="border-3 border-start row align-items-center justify-content-center d-none d-md-block"
           >
             <h3 class="col-12">Doggo ipsum doggo big ol pupper blep</h3>
             <h5>Showing you all the awesome anddddd yeah</h5>
@@ -112,7 +117,7 @@
       <!-- SECTION Quick Over-view  feats-->
 
       <section class="row justify-content-around bg-success p-5">
-        <div class="col-4">
+        <div class="col-md-4 order-2 order-md-1 p-3">
           <h1>More Content</h1>
           <h3>Sub Title</h3>
           <p>
@@ -121,8 +126,8 @@
             dog walk kibble Scooby snacks licks canary.
           </p>
         </div>
-        <div class="col-4">
-          <div class="card p-5 move-down" style="width: 30rem; height: 20rem">
+        <div class="col-md-4 order-1 order-md-2">
+          <div class="card p-5 move-down" style="width: 24rem; height: 20rem">
             <div class="progress m-3" style="height: 30px">
               <i class="mdi mdi-emoticon fs-6"></i>
               <div
@@ -175,19 +180,26 @@
         </div>
       </section>
       <!-- SECTION Spotlight on walker -->
-      <section
-        class="row justify-content-around align-content-around p-5 bg-white"
-      >
-        <div class="col-3 p-3">
-          <div class="card" style="width: 18rem">
+      <section class="row justify-content-around p-5 bg-white">
+        <div class="col-md-4">
+          <div class="card">
             <img
               src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNTgxMTc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
               alt=""
             />
           </div>
         </div>
-        <div class="col-4 p-5">
-          <h1>Sylvie Bate</h1>
+
+        <div class="col-md-5 p-1 mt-5">
+          <div class="row">
+            <div class="col-1">
+              <i class="mdi mdi-paw fs-3 custom-color-blk"></i>
+            </div>
+            <div class="col-8">
+              <h1>Sylvie Bate</h1>
+            </div>
+          </div>
+
           <h5>
             Play Dead sit nap lazy dog wet nose Tigger run fast fish lazy cat
             wagging hamster toy field yawn feathers ferret yawn
@@ -207,10 +219,12 @@
       </section>
 
       <!-- SECTION Reviews  -->
-
-      <section class="row p-4 bg-success justify-content-center">
-        <div class="col-3">
-          <div class="card card-custom p-4" style="width: 18rem">
+      <!-- TODO add card shadows and make mobile friendly   -->
+      <section
+        class="row p-4 bg-secondary align-items-center justify-content-around"
+      >
+        <div class="col-md-3">
+          <div class="card card-custom p-4">
             <div class="card-body text-center">
               <h4>
                 Yooooo my dog Mr.peabody loves this place. We found our forever
@@ -220,15 +234,15 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card card-custom p-4" style="width: 25rem">
+        <div class="col-md-4">
+          <div class="card card-custom p-4 card-emp">
             <div class="card-body text-center">
               <div class="row justify-content-center">
                 <i class="col-3 mdi mdi-star-circle fs-3"></i>
                 <i class="col-3 mdi mdi-star-circle fs-3"></i>
                 <i class="col-3 mdi mdi-star-circle fs-3"></i>
               </div>
-              <h4 class="p-1">
+              <h4 class="mt-2">
                 This is the best walking service. My little biscuit won't be
                 walking alone anytime soon.
               </h4>
@@ -236,8 +250,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card card-custom p-4" style="width: 18rem">
+        <div class="col-md-3">
+          <div class="card card-custom p-4">
             <div class="card-body text-center">
               <h4>
                 They take care of each of one of my babies.... theres 20....over
@@ -251,9 +265,9 @@
 
       <!-- SECTION company quote  -->
       <section
-        class="row justify-content-start align-content-around p-5 bg-white"
+        class="row justify-content-start align-content-around p-5 bg-success"
       >
-        <div class="col-6 p-5">
+        <div class="col-6 p-5 mission">
           <h1>Mission:</h1>
           <h5>
             Find peace, life is like a water fall, you’ve gotta flow. Give
@@ -263,7 +277,7 @@
         </div>
       </section>
     </main>
-    <footer class="row justify-content-around p-5">
+    <footer class="row justify-content-around bg-secondary p-5">
       <!-- place footer here -->
       <div class="col-3 bg-success bar"></div>
     </footer>

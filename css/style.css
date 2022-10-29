@@ -1,3 +1,6 @@
+body {
+}
+
 .bg-img {
   background-image: url("https://media.istockphoto.com/photos/tri-colored-pembroke-welsh-corgi-sitting-outside-in-a-park-with-fall-picture-id1432630691?b=1&k=20&m=1432630691&s=170667a&w=0&h=DGEzq626aP_JpLChJhodY83FykH4mU0vmhpyFZ-uSko=");
   min-height: 75vh;
@@ -13,31 +16,38 @@
   height: 100px;
 }
 
-.move-down {
-  transform: translateY(15vh);
-}
-
 img {
   min-height: 60vh;
-  min-width: 30vw;
+  object-fit: fill;
 }
 
-p {
-  color: black;
-}
-.custom-color-blk {
-  color: black;
-}
 div i.mdi {
   color: green;
 }
 
 .card-custom {
-  height: 100%;
+  height: 75%;
+  width: auto;
   background-color: white;
 }
 
 .bar {
   width: 65%;
   height: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .move-down {
+    transform: translateY(10vh);
+  }
+}
+
+.card-emp {
+  width: 25rem;
+  height: 30rem;
+}
+
+.mission {
+  font-family: "Chicle", cursive;
 }
