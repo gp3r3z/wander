@@ -27,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Chicle&display=swap"
       rel="stylesheet"
     />
-
+    <!-- 
     <style>
       body.debug .container,
       body.debug .container-fluid {
@@ -44,20 +44,21 @@
         outline: 4px dotted limegreen;
         outline-offset: -3px;
       }
-    </style>
+    </style> -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="debug">
-    <header class="sticky-top">
+    <header class="fixed-top border border-4 border-danger">
       <!-- place navbar here -->
-      <section class="navbar navbar-white bg-success sticky-top">
+      <nav class="navbar bg-success">
         <a class="navbar-brand" href="#">
           <i class="ms-5 mdi mdi-paw fs-3 text-black"></i>
           <h2 class="d-inline-block align-top" alt="">Wander</h2>
         </a>
-      </section>
+      </nav>
     </header>
+
     <main>
       <!-- SECTION Hero Image  -->
 
@@ -211,7 +212,6 @@
       </section>
 
       <!-- SECTION Reviews  -->
-      <!-- TODO add card shadows and make mobile friendly   -->
       <section
         class="row p-4 bg-secondary align-items-center justify-content-around"
       >

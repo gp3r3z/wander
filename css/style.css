@@ -47,3 +47,7 @@ div i.mdi {
 .mission {
   font-family: "Chicle", cursive;
 }
+
+body {
+  padding-top: 70px;
+}
